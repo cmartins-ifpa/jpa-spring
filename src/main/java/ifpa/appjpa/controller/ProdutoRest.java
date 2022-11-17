@@ -26,6 +26,7 @@ public class ProdutoRest {
 	
 	@GetMapping("/{id}")
 	public Produto buscar(@PathVariable Long id) {
+		System.out.println("pesquisando o ID = " + id);
 		return produtoRepo.findById(id).orElse(new Produto());
 	}
 	
