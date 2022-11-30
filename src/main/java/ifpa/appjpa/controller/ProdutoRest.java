@@ -37,6 +37,7 @@ public class ProdutoRest {
 
 	@PostMapping
 	public Produto salvar(@RequestBody Produto produto) {	
+		
 		return produtoRepo.save(produto);
 	}
 
